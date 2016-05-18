@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/rounded_edges_black"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="10dip" 
+    android:textAlignment="viewStart">
+
+    <LinearLayout
+        android:id="@+id/event_view_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+        <ImageView
+            android:id="@+id/event_picutre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/event_title"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/event_view_linear_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/event_view_linear_layout"
+        android:focusable="false"
+        android:textColor="@android:color/white"
+        android:focusableInTouchMode="false"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/event_details"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/event_title"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/event_view_linear_layout"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/time_to_event"
+        style="@android:style/TextAppearance.DeviceDefault.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_alignTop="@id/event_view_linear_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/event_view_linear_layout"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textStyle="bold" />
+
+</RelativeLayout>

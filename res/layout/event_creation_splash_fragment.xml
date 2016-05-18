@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id = "@+id/event_creation_splash_fragment_layout">
+    
+        <ImageView
+            android:id="@+id/event_creation_splash_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mazeltov_logo" />
+
+        <ImageView
+            android:id="@+id/event_creation_splash_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mazeltov_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_creation_splash_subtext"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/event_creation_splash_lets_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color"
+            android:text="@string/event_creation_splash_frorttext"
+            android:textColor="@color/translucent_black"
+            android:textSize="40sp" />
+
+</LinearLayout>

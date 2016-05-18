@@ -1,0 +1,28 @@
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" 
+	android:background="@android:color/white">
+
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" 
+		    android:id="@+id/event_creation_empty_view" />
+	
+	    <include 
+	        android:id="@+id/footer" 
+	        android:layout_height="70dp"
+	      	layout="@layout/arcmenu" 
+	      	android:background="@android:color/transparent"
+	      	android:layout_width="fill_parent"
+	      	android:layout_centerHorizontal="true"
+	      	android:layout_alignParentBottom="true" />
+	    
+	</RelativeLayout>
+	
+</FrameLayout>

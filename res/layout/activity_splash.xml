@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash"
+    style="noActionBar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="10dp"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/ButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/splash_sign_up_with_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:enabled="false"
+                android:visibility="invisible"
+                android:layout_gravity="bottom|center_vertical"
+                android:background="@drawable/rounded_edges_blue"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:text="Connect with Facebook !"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/splash_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center_vertical"
+                android:background="@drawable/rounded_edges"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:visibility="invisible"
+                android:text="New ? Join Us !"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/splash_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center_vertical"
+                android:background="@drawable/rounded_edges"
+                android:padding="2dp"
+                android:enabled="false"
+                android:visibility="invisible"
+                android:layout_margin="5dp"
+                android:text="Coming Back ? Log in !"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale">
+        <ignore path="src/com/lbis/utils/DomainValidator.java" />
+    </issue>
+    <issue id="InlinedApi">
+        <ignore path="src/com/lbis/mazeltov/CameraActivity.java" />
+        <ignore path="src/com/lbis/mazeltov/SignUpActivity.java" />
+    </issue>
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/com/lbis/mazeltov/CameraActivity.java" />
+        <ignore path="src/com/lbis/mazeltov/CameraPreview.java" />
+        <ignore path="src/com/lbis/mazeltov/PictureViewerActivity.java" />
+        <ignore path="src/com/lbis/mazeltov/Preview.java" />
+        <ignore path="src/com/lbis/mazeltov/VideoCapture.java" />
+        <ignore path="src/com/lbis/utils/PictureViewerActivity.java" />
+        <ignore path="src/com/lbis/utils/Utils.java" />
+        <ignore path="src/com/lbis/viewComponents/HomeFragment.java" />
+        <ignore path="src/com/lbis/viewComponents/ImagePart.java" />
+    </issue>
+</lint>

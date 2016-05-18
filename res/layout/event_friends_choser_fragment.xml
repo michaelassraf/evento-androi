@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_edges"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/event_friends_chooser_commit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center_vertical"
+            android:background="@drawable/rounded_edges_black"
+            android:padding="5dp"
+            android:text="Create the event !"
+            android:textColor="@android:color/white" />
+
+        <AutoCompleteTextView
+            android:id="@+id/event_friends_chooser_auto_complete"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dropDownHeight="150dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:hint="Start typing a name..."
+            android:inputType="textCapWords"
+            android:background="@android:color/transparent"
+            android:popupBackground="@android:color/transparent"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black" />
+
+        <com.fortysevendeg.swipelistview.SwipeListView
+            android:id="@+id/event_friends_chooser_list_view"
+            android:drawSelectorOnTop="false"
+            android:background="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            swipe:swipeBackView="@+id/back"
+            swipe:swipeFrontView="@+id/front"
+            swipe:swipeMode="both" />
+    </LinearLayout>
+
+</FrameLayout>

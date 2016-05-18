@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+    
+    <FrameLayout 
+        android:id="@+id/preview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:background="@android:color/transparent">
+
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:background="@android:color/transparent">
+
+		    <SurfaceView
+		        android:id="@+id/surfaceView"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent" 
+		        android:background="@android:color/transparent"/>
+		    
+		    <include 
+		        android:id="@+id/footer" 
+		        android:layout_height="70dp"
+		      	layout="@layout/arcmenu" 
+		      	android:background="@android:color/transparent"
+		      	android:layout_width="fill_parent"
+		      	android:layout_centerHorizontal="true"
+		      	android:layout_alignParentBottom="true" />
+		    
+		</RelativeLayout>
+    </FrameLayout>
+</LinearLayout>
